@@ -1,0 +1,64 @@
+.mask{
+    height: 200vh;
+    width: 100%;
+    position: relative;
+}
+.introimg{
+    width: 100%;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    object-fit:cover;
+}
+.mask::after{
+    content: "";
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+.herointro{
+    height: 100%;
+    width:100%;
+}
+.herointro .content {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    text-align: center;
+}
+
+
+
+.herointro .btn{
+    margin: 1rem 0.2rem;
+}
+.buttons a{
+    text-decoration: none;
+}
+.herointro .content h1{
+    font-size: 4rem;
+    padding:0.6rem 0 1.5rem;
+}
+.herointro .content p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+@media screen and (max-width=640px){
+    .herointro .content h1{
+        font-size: 3rem;
+        padding:0.6rem 0 1.5rem;
+    }
+    .herointro .content p{
+        font-size: 1.4rem;
+        
+    }
+    
+    
+}
+
